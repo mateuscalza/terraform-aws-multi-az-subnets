@@ -35,6 +35,6 @@ output "az_eip_ids" {
 }
 
 output "az_eip_public_ips" {
-  value       = { for az, m in local.output_map : az => m.eip_id }
+  value       = { for az, m in local.output_map : az => m.eip_public_ip }
   description = "Map of AZ names to EIP Public IPs (only for public subnets)"
 }
