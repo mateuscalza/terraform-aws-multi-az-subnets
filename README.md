@@ -348,6 +348,8 @@ Available targets:
 | <a name="output_az_subnet_cidr_blocks"></a> [az\_subnet\_cidr\_blocks](#output\_az\_subnet\_cidr\_blocks) | Map of AZ names to subnet CIDR blocks |
 | <a name="output_az_subnet_ids"></a> [az\_subnet\_ids](#output\_az\_subnet\_ids) | Map of AZ names to subnet IDs |
 | <a name="output_az_subnet_map"></a> [az\_subnet\_map](#output\_az\_subnet\_map) | Map of AZ names to map of information about subnets |
+| <a name="output_az_eip_ids"></a> [az\_eip\_ids](#output\_az\_eip\_ids) | Map of AZ names to EIP IDs (only for public subnets) |
+| <a name="output_az_eip_public_ips"></a> [az\_eip\_public\_ips](#output\_az\_eip\_public\_ips) | Map of AZ names to EIP Public IPs (only for public subnets) |
 <!-- markdownlint-restore -->
 
 
