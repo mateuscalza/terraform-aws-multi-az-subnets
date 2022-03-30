@@ -28,3 +28,13 @@ output "az_subnet_map" {
   value       = local.output_map
   description = "Map of AZ names to map of information about subnets"
 }
+
+output "az_eip_ids" {
+  value       = { for az, m in local.output_map : az => m.eip_id }
+  description = "Map of AZ names to EIP IDs (only for public subnets)"
+}
+
+output "az_eip_public_ips" {
+  value       = { for az, m in local.output_map : az => m.eip_id }
+  description = "Map of AZ names to EIP Public IPs (only for public subnets)"
+}
